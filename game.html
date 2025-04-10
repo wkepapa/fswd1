@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NUMBER GAME</h1>
+    <script >
+        let randnum=Math.floor(Math.random()*101);
+let attempt=0;
+while(attempt<10){
+    attempt++;
+    alert(`attempt no ${attempt}`);
+
+
+let numint = prompt("Please enter a number between 0 to 100.");
+let num=parseFloat(numint);
+console.log(num);
+if(isNaN(num)){
+    alert("Invalid input");
+}else{
+ 
+if(num==randnum){
+    alert("congrats u win");
+    break;
+}else if(randnum>num){
+    alert("too low");
+}else{
+    alert("too high");
+}
+}
+}alert(`random no was ${randnum}`);
+    </script>
+</body>
+</html>

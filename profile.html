@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        .tags-container{
+            display: flex;
+            gap:8px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+  <button id="but"onclick="hidebio()">Hide Bio</button>  
+    <div class="probio">
+<div className="profile-sec" style="text-align: left;">
+ <img   src="dead.webp" alt="profile image" width=260px height=250px/>
+
+</div>
+
+<fieldset class="bio" id="bio">
+    <legend><mark > Bio </mark> </legend>
+    <p class="biopara" id="biopara" > I'm a passionate backend developer who loves 
+    solving complex problems with code. Always eager to
+     learn new technologies and improve my skills. <br>
+    Focused on building scalable and efficient systems.
+    I am well-versed in working with databases, both SQL and NoSQL, ensuring data is stored and <br>
+     retrieved seamlessly. My experience extends to creating and consuming RESTful APIs and working 
+     with microservices architectures to build robust,<br> distributed systems
+     In addition to my technical skills, I’m a team player who values collaboration and communication.
+      I enjoy working in dynamic <br>environments where I can contribute to brainstorming sessions, 
+      code reviews, and ensuring best practices are followed.
+
+Outside of coding, I love<br> exploring new technologies and keeping up with industry trends,
+ whether through online courses, blogs, or attending tech meetups. I believe <br>in lifelong 
+ learning, which keeps me motivated and sharp.
+    </p>
+</fieldset>
+</div>
+<div class="infoslid">
+<div class="info-box">
+    <h1 >Shivam D Chaugule</h1>
+    <h2>Backend Ninja</h2>
+    <span classname="label">Age:</span><span class="value">19</span>
+    <br>
+    <span classname="label">Year:</span><span class="value">S.E</span>
+    <br>
+    <label for="email" >Email</label>
+    <input type="email" id="email" value="shivamchaugule7@gmail.com" class="ema"/>
+    
+</div>
+<div class="sliders">
+    <div class="slider">
+    <label for="intro-extro">Introvert</label>
+    <input class="try" type="range" value="45" min="0" max="200" id="intro-extro" >
+    <label for="intro-extro">Extrovert</label>
+    </div>
+    <div class="slider">
+        <label for="pasi-act">Passive</label>
+        <input class="try" type="range" value="65" min="0" max="100" id="pasi-act" >
+        <label for="pasi-act">Active</label>
+        </div>
+        <div class="slider">
+            <label for="opti-pessi">Optimist</label>
+            <input class="try" type="range" value="70" min="0" max="100" id="opti-pessi" >
+            <label for="opti-pessi">Pessimist</label>
+            </div>
+            <div class="slider">
+                <label for="ana-crea">Analytical</label>
+                <input class="try" type="range" value="40" min="0" max="100" id="ana-crea" >
+                <label for="ana-crea">Creative</label>
+                </div>
+    </div>
+</div>
+<br>
+<div class="con">
+<div class="tags-container">
+    <span class="tag">Organized</span>
+    <span class="tag">Protective</span>
+    <span class="tag">Hardworking</span>
+    <span class="tag">Practical</span>
+    <span class="tag">Passionate</span>
+    <span class="tag">Punctual</span>
+</div>
+<section class="project-section">
+  <input placeholder="search my projects" type="text" id="seabox"/>
+  <button id="seabut" onclick="Projsea()">Search</button>
+    <header>
+      <h2>My Projects</h2>
+    </header>
+  
+    <article class="project">
+      <header>
+        <h3>Soil Quality and Weather Forecast</h3>
+      </header>
+      <p>This project integrates weather data with soil quality analysis to help users make informed agricultural decisions.</p>
+    </article>
+  
+    <article class="project">
+      <header>
+        <h3>REST API CRUD Application</h3>
+      </header>
+      <p>A MERN stack-based app for seamless data interaction with a RESTful API and full CRUD functionality.</p>
+    </article>
+  
+    <article class="project">
+      <header>
+        <h3>Authentication System</h3>
+      </header>
+      <p>A secure authentication system to manage user access with user-friendly sign-in and sign-up processes.</p>
+    </article>
+  
+    <article class="project">
+      <header>
+        <h3>Jobs API</h3>
+      </header>
+      <p>A job listing and search API that allows users to find job opportunities with ease.</p>
+    </article>
+  
+    <article class="project">
+      <header>
+        <h3>Hangman Game (React)</h3>
+      </header>
+      <p>A fun, interactive Hangman game built with React, showcasing skills in front-end development and UI/UX design.</p>
+    </article>
+  </section>
+  <div>
+    <script src="prof.js"></script>
+</body>
+</html>
